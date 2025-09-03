@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Vetratech 3D Printing</title>
+  <link rel="stylesheet" href="shop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <!-- Logo + Brand -->
+    <div class="logo">
+      <img src="WhatsApp_Image_2025-08-29_at_6.12.06_AM-removebg-preview.png" alt="Vetratech Logo" class="logo-img">
+      <span class="logo-text">Vetratech</span>
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-button" class="mobile-menu-btn">☰</button>
+  </nav>
+
+  <!-- Mobile Dropdown -->
+  <ul class="mobile-menu" id="mobile-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+
+<!-- this is the shop are ,from here we are supposed to add the products -->
+
+<!-- Shop Section -->
+<section class="shop">
+  <h2>Our 3D Printed Products</h2>
+  <p>Explore our collection of high-quality 3D printed items, designed with precision and care.</p>
+
+
+<!-- to add new products just duplicate the div with class product card and change the details inside it -->
+
+ <div class="shop-grid">
+  <div class="product-card">
+    <img src="images/phone-stand.jpg" alt="3D printed phone stand">
+    <h3>Phone Stand</h3>
+    <p class="desc">Adjustable angle</p>
+    <span class="price">$12.99</span>
+    <button class="order-btn"
+      onclick="orderNow('Phone Stand', '12.99')">Order Now</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/plant-pot.jpg" alt="3D printed plant pot">
+    <h3>Geometric Plant Pot</h3>
+    <p class="desc">Self-watering</p>
+    <span class="price">$18.99</span>
+    <button class="order-btn"
+      onclick="orderNow('Geometric Plant Pot', '18.99')">Order Now</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/keychain.jpg" alt="3D printed keychain">
+    <h3>Custom Keychain</h3>
+    <p class="desc">Personalized text</p>
+    <span class="price">$8.99</span>
+    <button class="order-btn"
+      onclick="orderNow('Custom Keychain', '8.99')">Order Now</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/desk-organizer.jpg" alt="3D printed desk organizer">
+    <h3>Desk Organizer</h3>
+    <p class="desc">Modular design</p>
+    <span class="price">$24.99</span>
+    <button class="order-btn"
+      onclick="orderNow('Desk Organizer', '24.99')">Order Now</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>  <!--  do not delte this section tab this is the end of the shop section  -->
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="services.html">Prototyping</a></li>
+        <li><a href="services.html">Production</a></li>
+        <li><a href="services.html">Design Services</a></li>
+        <li><a href="services.html">Post-Processing</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="shop.html">All Products</a></li>
+        <li><a href="shop.html">Best Sellers</a></li>
+        <li><a href="shop.html">New Arrivals</a></li>
+        <li><a href="shop.html">Custom Orders</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Blog</a></li>
+        <li><a href="about.html">Careers</a></li>
+        <li><a href="about.html">Press</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="legal.html">Privacy</a></li>
+        <li><a href="legal.html">Terms</a></li>
+        <li><a href="legal.html">Shipping Policy</a></li>
+        <li><a href="legal.html">Returns</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 PrintCraft 3D. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="shop.js"></script>
+</body>
+</html>
