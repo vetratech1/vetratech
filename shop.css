@@ -1,0 +1,244 @@
+/* === Base Reset & Fonts === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+}
+
+/* ============================== Navbar ================================*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.logo-text {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #4c9fff;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Dropdown */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background: #111;
+    padding: 15px;
+}
+
+.mobile-menu li {
+    margin: 10px 0;
+}
+
+.mobile-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}
+
+/* ============================== Shop Section ================================*/
+.shop {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.shop h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.shop p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Product Grid */
+.shop-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Image (make it like screenshot icons) */
+.product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;         /* keeps product inside frame */
+    border-radius: 12px;
+    background: #f3f4f6;         /* gray placeholder box */
+    padding: 20px;               /* spacing inside */
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-card .desc {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.price {
+    display: block;
+    font-weight: 600;
+    color: #4c3ff0;
+    margin-bottom: 15px;
+}
+
+.order-btn {
+    background: #5b3df6;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.order-btn:hover {
+    background: #3b82f6;
+}
+
+/* ============================== Footer ================================*/
+footer {
+    background: #1f2937;
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #d1d5db;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
